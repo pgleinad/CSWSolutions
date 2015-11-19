@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Database Name="BookLibrary" xmlns="http://schemas.microsoft.com/linqtosql/mapping/2007">
+  <Table Name="dbo.Category" Member="BookLibraryAPI.Models.Category">
+    <Type Name="BookLibraryAPI.Models.Category">
+      <Column Name="id" Member="id"/>
+      <Column Name="name" Member="name" />
+      <Column Name="description" Member="description" />
+    </Type>
+  </Table>
+  <Function Name="dbo.addCategory" Method="addCategory">
+    <Parameter Name="id" Parameter="id" />
+    <Parameter Name="name" Parameter="name" />
+    <Parameter Name="description" Parameter="description" />
+  </Function>
+  <Function Name="dbo.updateCategory" Method="updateCategory">
+    <Parameter Name="id" Parameter="id" />
+    <Parameter Name="name" Parameter="name" />
+    <Parameter Name="description" Parameter="description" />
+  </Function>
+  <Function Name="dbo.removeCategory" Method="removeCategory">
+    <Parameter Name="id" Parameter="id" />
+  </Function>
+</Database>
